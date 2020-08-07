@@ -59,3 +59,13 @@
 .submenu a{
   margin-left:20px;
 }
+
+.bg-black{
+  background-color: black;
+}
+
+.nav-footer{
+  position: absolute;
+  bottom: 10px;
+
+}
