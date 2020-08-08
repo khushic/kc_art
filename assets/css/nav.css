@@ -1,0 +1,89 @@
+* {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
+
+.nav h1, h2, h3, h4, h5, h6, p{
+  color:white;
+}
+
+.row{
+  max-width:100vw;
+  margin: 0px;
+}
+
+.side-navbar{
+  padding: 2rem 0rem 2rem 1rem!important;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 991px) {
+  .side-navbar{
+    padding: 2rem!important;
+    height: 2rem;
+  }
+}
+
+.side-header{
+  padding:2rem 0rem 7rem;
+}
+
+.nav-spacing{
+  line-height:3rem;
+}
+
+.nav-tab{
+  padding:5px 20px;
+  width: 100%;
+}
+
+.nav-tab:hover{
+  background:#e5ca66;
+}
+
+.nav-tab:hover>.submenu{
+  display: block;
+}
+
+.submenu:hover{
+  background-color: #e5ca66;
+}
+
+.nav-tab a{
+  color:white;
+  font-size:16px;
+  display:block;
+}
+
+.nav-tab a:hover{
+  text-decoration: none;
+  color:white!important;
+}
+
+.nav-tab a:focus{
+  outline: none;
+  text-decoration: none;
+}
+
+.nav-active{
+  background-color:#e5ca66;
+}
+
+.submenu a{
+  margin-left:20px;
+  display:block;
+}
+
+.bg-black{
+  background-color: black;
+}
+
+.nav-footer{
+  position: absolute;
+  bottom: 10px;
+  padding: 0px 10px;
+}
+
+.footer-text{
+  font-size:12px;
+  font-weight: 100;
+}
