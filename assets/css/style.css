@@ -8,6 +8,8 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -15,26 +17,28 @@
   flex: 25%;
   max-width: 33.3%;
   padding: 0 4px;
+  height: 100%;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-bottom: 8px;
   vertical-align: middle;
   width: 100%;
+  height: 100%;
   filter: grayscale(1) brightness(0.7);
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s linear;
+  object-fit: cover;
 }
 
 .column img:hover {
   filter: grayscale(0);
 }
 
-@media screen and (max-width: 970px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
+@media screen and (max-width: 991px) {
+  .column img {
+    filter: grayscale(0) brightness(1);
   }
 }
 
@@ -43,7 +47,50 @@
     flex: 100%;
     max-width: 100%;
   }
-  .column img {
-    filter: grayscale(0) brightness(1);
-  }
+}
+
+
+#ocean_sunset{
+  height: 40%;
+}
+
+#arctic_night{
+  height: 60%;
+}
+
+#ocean_night{
+  height: 100%;
+}
+
+#cherry_blossoms{
+  height: 60%;
+}
+
+#milky_night{
+  height: 40%;
+}
+
+
+
+
+.contact-header{
+  padding-bottom: 15px;
+}
+
+.btn-yellow{
+  background-color: #e5ca66;
+  color: white;
+}
+
+.vertical-center{
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.contact-form{
+  margin: auto;
+  margin: 2rem;
 }
