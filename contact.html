@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>KC Art - Contact Me</title>
+    <meta name="keywords" content="KC Art - Contact Me" />
+    <meta name="description" content="Check out a budding artist's portfolio">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/png" href="assets/img/kclogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="row nav">
+    <!--Header-->
+    <div class="col-lg-2 col-12 side-navbar bg-black-nav text-white">
+      <nav class="">
+        <div class="row">
+          <div class="col">
+          <div class="side-header">
+            <!--Insert logo here-->
+            <img class="nav-logo" src="assets/img/kclogo.png" />
+          </div>
+          </div>
+          <div class="col collapse-hidden">
+          <div class="justify-content-end">
+            <button class="btn header-btn-collapse-nav visible-md" data-toggle="collapse" data-target="#navbar-collapse">
+                <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="list-unstyled components nav-spacing">
+            <li class="nav-tab">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav-tab">
+                <a href="about.html">About</a>
+            </li>
+            <li class="nav-tab">
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-tab">
+                <a href="collections.html">Collections</a>
+            </li>
+            <li class="nav-tab nav-active">
+                <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-footer text-center">
+          <p class="footer-text">KC Art <br>Copyright ©2020 <br>All rights reserved</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="col-lg-10 col-12">
+      <div class="body">
+        <div class="container-fluid split-container">
+          <div class="row" style="width:100%; height:100%">
+            <div class="col-md-5 col-12 small-screen"> 
+              <img src="./assets/img/disney/bruni.jpg" style="width: 100%; height: auto"/>
+            </div>
+            <div class="col-md-7 col-12 my-auto">
+              <form class="contact-form" action="https://formspree.io/mwkrzkqy" method="POST" novalidate="novalidate">
+                  <h2 class="text-dark contact-header"><mark data-aos="highlight-text" data-aos-delay="200" class="aos-init aos-animate">Contact</mark></h2>
+                  <div class="form-row">
+                      <div class="form-group input-group col-md-12">
+                          <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" placeholder="Full Name" required="">
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group input-group col-md-12">
+                          <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="_replyto" id="email" placeholder="E-mail" required="">
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group input-group col">
+                          <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="_subject" id="subject" placeholder="Subject" required="">
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group input-group col">
+                          <textarea maxlength="5000" data-msg-required="Please enter your message." rows="5" class="form-control" name="message" id="message" placeholder="Message" required=""></textarea>
+                      </div>
+                  </div>
+                  <input type="hidden" name="_gotcha" style="display:none"/>
+                  <input type="hidden" name="_next" value="https://khushic.github.io/kc_art/contact.html" style="display:none"/>
+                  <div class="form-row mt-2">
+                      <div class="col">
+                          <input type="submit" value="Send Message" class="btn btn-yellow btn-block transition-hover" data-loading-text="Loading...">
+                      </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
