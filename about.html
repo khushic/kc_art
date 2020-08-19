@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>KC Art</title>
-    <meta name="keywords" content="KC Art" />
+    <title>KC Art - About Me</title>
+    <meta name="keywords" content="KC Art - About Me" />
     <meta name="description" content="Check out a budding artist's portfolio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" type="image/png" href="assets/img/kclogo.png" />
@@ -39,7 +39,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="list-unstyled components nav-spacing">
-            <li class="nav-tab nav-active">
+            <li class="nav-tab">
                 <a href="index.html">Home</a>
             </li>
             <li class="nav-tab">
@@ -51,7 +51,7 @@
             <li class="nav-tab">
                 <a href="collections.html">Collections</a>
             </li>
-            <li class="nav-tab">
+            <li class="nav-tab nav-active">
                 <a href="contact.html">Contact</a>
             </li>
           </ul>
@@ -59,51 +59,25 @@
         <div class="nav-footer text-center">
           <p class="footer-text">KC Art <br>Copyright ©2020 <br>All rights reserved</p>
         </div>
-      </div>
-    </nav>
-
+      </nav>
+    </div>
 
     <div class="col-lg-10 col-12">
       <div class="body">
-        <div class="container-fluid" style="width:100%; height:100%">
-          <div class="row-index">
-            <div class="row row-gallery">
-              <div class="column">
-                <a id="beauty_oceansunset_modal" class="text-white anim-link" data-toggle="modal" data-target="#full-img">
-                  <img style="height: 40%" src="./assets/img/beauty/oceansunset.jpg" />
-                </a>
-                <a id="sharpie_planetcircle_modal" class="text-white anim-link" data-toggle="modal" data-target="#full-img">
-                  <img style="height: 60%" src="./assets/img/sharpie/planetcircle.jpg" />
-                </a>
-              </div>
-              <div class="column">
-                <a id="beauty_oceannight_modal" class="text-white anim-link" data-toggle="modal" data-target="#full-img">
-                  <img style="height: 100%" src="./assets/img/beauty/oceannight.jpg" />
-                </a>
-              </div>
-              <div class="column">
-                <a id="disney_rapunzeltoddler_modal" class="text-white anim-link" data-toggle="modal" data-target="#full-img">
-                  <img style="height: 50%" src="./assets/img/disney/rapunzeltoddler.jpg" />
-                </a>
-                <a id="beauty_oceansunset_modal" class="text-white anim-link" data-toggle="modal" data-target="#full-img">
-                  <img style="height: 50%" src="./assets/img/beauty/milkyway.jpg" />
-                </a>
-              </div>
+        <div class="container-fluid split-container">
+          <div class="row" style="width:100%; height:100%">
+            <div class="col-md-5 col-12 small-screen">
+              <img src="./assets/img/aboutme.jpg" style="width: 100%; height: auto"/>
+            </div>
+            <div class="col-md-7 col-12 small-screen">
+              <h2 class="text-dark contact-header"><mark data-aos="highlight-text" data-aos-delay="200" class="aos-init aos-animate">About Me</mark></h2>
+              <p class="text-dark">Hi, I'm KC!</p>
+              <p class="text-dark">I'm currently attending the University of Virginia as a Computer Science and Economics.</p>
+              <p class="text-dark">While I have a passion for technology and analytics, I also love expressing my creative side through my artwork. I love painting, drawing my inspiration from nature, and sketching, getting ideas from media I indulge in like Disney movies.</p>
+              <!--<p class="text-dark">I'm also a freelance web designer. If you like this website or would like to learn more, <a href="#" class="text-dark underline">visit my portfolio</a> or <a href="#" class="text-dark underline">check out my Fiverr.</a></p>-->
+              <p class="text-dark">If you're interested in finding out more about me or my art work, or if you're interested in purchasing my art, <a href="contact.html" class="text-dark underline">reach out!</a> </p>
             </div>
           </div>
-
-          <div class="modal fade coll-modal" id="full-img" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-box class-modal-box" role="document">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" class="text-white">&times;</span>
-              </button>
-              <div class="modal-content">
-                <img style="width: 100%; height: auto" id="full-img-content"></div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -115,17 +89,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <!-- Bootstrap JS -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  <script>
-    $('#full-img').on('shown.bs.modal', function (event) {
-      var div = event.relatedTarget;
-      console.log(div.id);
-      var components = div.id.split("_");
-      var folder = components[0];
-      var image = components[1];
-      console.log(image);
-      document.getElementById("full-img-content").src = "assets/img/"+folder+"/"+image+".jpg";
-    });
-
-  </script>
 </body>
 </html>
