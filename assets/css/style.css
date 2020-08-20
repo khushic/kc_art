@@ -145,7 +145,12 @@ mark {
 .filter-btn{
   height: max-content;
   max-width: 100%;
-  overflow-x: scroll;
+}
+
+@media screen and (max-width: 750px) {
+  .filter-btn{
+    overflow-x: scroll;
+  }  
 }
 
 .btn:focus {
