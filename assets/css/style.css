@@ -340,6 +340,17 @@ mark {
   width: 40%!important;
 }
 
+@media only screen and (max-width: 750px) {
+  .modal-box{
+    max-width: 70%!important;
+    width: 70%!important;
+    margin: 4rem auto!important;
+  }
+}
+
+@@media only screen and (max-width: ) {
+
+}
 
 .grid-gallery{
   text-align: center;
