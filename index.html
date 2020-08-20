@@ -18,7 +18,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="row nav">
+  <div id="msg" style="font-size:largest;">
+  <!-- you can set whatever style you want on this -->
+    Loading, please wait...
+  </div>
+  <div id="body" class="row nav">
     <!--Header-->
     <div class="col-lg-2 col-12 side-navbar bg-black-nav text-white">
       <nav class="">
@@ -125,7 +129,10 @@
       console.log(image);
       document.getElementById("full-img-content").src = "assets/img/"+folder+"/"+image+".jpg";
     });
-
+    $(document).ready(function() {
+      $('#body').show();
+      $('#msg').hide();
+    });
   </script>
 </body>
 </html>
