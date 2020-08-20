@@ -48,6 +48,15 @@
   filter: grayscale(0);
 }
 
+@media screen and (max-width: 991px) {
+  .column{
+    height: max-content;
+  }
+  .column img {
+    height: 100%!important;
+  }
+}
+
 .body-overflow{
   overflow:visible;
   margin-bottom: 4rem;
