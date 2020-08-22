@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>KC Art</title>
-    <meta name="keywords" content="KC Art" />
-    <meta name="description" content="Check out a budding artist's portfolio">
+    <title>KC Web Design</title>
+    <meta name="keywords" content="KC Web Design" />
+    <meta name="description" content="Check out a budding freelancer's portfolio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" type="image/png" href="assets/img/kclogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,27 +18,22 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="msg" style="font-size:largest;">
-  <!-- you can set whatever style you want on this -->
-    Loading, please wait...
-  </div>
   <div id="body" class="row nav">
     <!--Header-->
     <div class="col-lg-2 col-12 side-navbar bg-black-nav text-white">
       <nav class="">
         <div class="row">
           <div class="col">
-          <div class="side-header">
-            <!--Insert logo here-->
-            <img class="nav-logo" src="assets/img/kclogo.png" />
-          </div>
+            <div class="side-header">
+              <img class="nav-logo" src="assets/img/kclogo.png" />
+            </div>
           </div>
           <div class="col collapse-hidden">
-          <div class="justify-content-end">
-            <button class="btn header-btn-collapse-nav visible-md" data-toggle="collapse" data-target="#navbar-collapse">
-                <i class="fas fa-bars"></i>
-            </button>
-          </div>
+            <div class="justify-content-end">
+              <button class="btn header-btn-collapse-nav visible-md" data-toggle="collapse" data-target="#navbar-collapse">
+                  <i class="fas fa-bars"></i>
+              </button>
+            </div>
           </div>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -128,10 +123,6 @@
       var image = components[1];
       console.log(image);
       document.getElementById("full-img-content").src = "assets/img/"+folder+"/"+image+".JPG";
-    });
-    $(document).ready(function() {
-      $('#body').show();
-      $('#msg').hide();
     });
   </script>
 </body>

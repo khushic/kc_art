@@ -38,14 +38,6 @@
   background:#e5ca66;
 }
 
-.nav-tab:hover>.submenu{
-  display: block;
-}
-
-.submenu:hover{
-  background-color: #e5ca66;
-}
-
 .nav-tab a{
   color:white;
   font-size:16px;
