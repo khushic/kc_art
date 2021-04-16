@@ -117,12 +117,12 @@
   <script>
     $('#full-img').on('shown.bs.modal', function (event) {
       var div = event.relatedTarget;
-      console.log(div.id);
       var components = div.id.split("_");
       var folder = components[0];
       var image = components[1];
-      console.log(image);
       document.getElementById("full-img-content").src = "assets/img/"+folder+"/"+image+".JPG";
+      var folder = '';
+      var image = '';
     });
   </script>
 </body>
