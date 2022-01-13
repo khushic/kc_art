@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>KC Web Design</title>
+    <meta name="keywords" content="KC Web Design" />
+    <meta name="description" content="Check out a budding freelancer's portfolio">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/png" href="assets/img/kclogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="body" class="row nav">
+    <!--Header-->
+    <div class="col-lg-2 col-12 side-navbar bg-black-nav text-white">
+      <nav class="">
+        <div class="row">
+          <div class="col">
+            <div class="side-header">
+              <img class="nav-logo" src="assets/img/kclogo.png" />
+            </div>
+          </div>
+          <div class="col collapse-hidden">
+            <div class="justify-content-end">
+              <button class="btn header-btn-collapse-nav visible-md" data-toggle="collapse" data-target="#navbar-collapse">
+                  <i class="fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="list-unstyled components nav-spacing">
+            <li class="nav-tab nav-active">
+                <a href="index">Home</a>
+            </li>
+            <li class="nav-tab">
+                <a href="about">About</a>
+            </li>
+            <li class="nav-tab">
+                <a href="gallery">Gallery</a>
+            </li>
+            <li class="nav-tab">
+                <a href="collections">Collections</a>
+            </li>
+            <li class="nav-tab">
+                <a href="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-footer text-center">
+          <p class="footer-text">KC Art <br>Copyright ©2021 <br>All rights reserved</p>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="col-lg-10 col-12">
+      <div class="body">
+        <div class="container-fluid" style="width:100%; height:100%">
+          <div class="row-index">
+            <div class="row row-gallery">
+              <div class="column">
+                <a id="beauty_oceansunset_modal" class="text-white anim-link" data-toggle="modal" data-target="#full-img">
+                  <img style="height: 40%" src="./assets/img/beauty/oceansunset.JPG" />
+                </a>
+                <a id="sharpie_planetcircle_modal" class="text-white anim-link" data-toggle="modal" data-target="#full-img">
+                  <img style="height: 60%" src="./assets/img/sharpie/planetcircle.JPG" />
+                </a>
+              </div>
+              <div class="column">
+                <a id="beauty_oceannight_modal" class="text-white anim-link" data-toggle="modal" data-target="#full-img">
+                  <img style="height: 100%" src="./assets/img/beauty/oceannight.JPG" />
+                </a>
+              </div>
+              <div class="column">
+                <a id="disney_rapunzeltoddler_modal" class="text-white anim-link" data-toggle="modal" data-target="#full-img">
+                  <img style="height: 50%" src="./assets/img/disney/rapunzeltoddler.JPG" />
+                </a>
+                <a id="beauty_milkyway_modal" class="text-white anim-link" data-toggle="modal" data-target="#full-img">
+                  <img style="height: 50%" src="./assets/img/beauty/milkyway.JPG" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade coll-modal" id="full-img" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-box class-modal-box" role="document">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="text-white">&times;</span>
+              </button>
+              <div class="modal-content">
+                <img style="width: 100%; height: auto" id="full-img-content"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script>
+    $('#full-img').on('shown.bs.modal', function (event) {
+      var div = event.relatedTarget;
+      var components = div.id.split("_");
+      var folder = components[0];
+      var image = components[1];
+      document.getElementById("full-img-content").src = "assets/img/"+folder+"/"+image+".JPG";
+      var folder = '';
+      var image = '';
+    });
+  </script>
+</body>
+</html>
